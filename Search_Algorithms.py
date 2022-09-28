@@ -4,7 +4,7 @@ This file is your main submission that will be graded against. Only copy-paste
 code on the relevant classes included here. Do not add any classes or functions
 to this file that are not part of the classes that we want.
 """
-
+import math
 import heapq
 import sys
 
@@ -316,6 +316,13 @@ if __name__ == '__main__':
     print("Path_astar:", path_astar)
     print("Explored Nodes A Star: ", explored_astar)
     print(len(explored_astar))
+    print()
+    
+    print("geographical distance")
+    path_astar, explored_astar = astar_search(graph_neighbours, '0', '61')
+    print("Path_astar:", path_astar)
+    print("Explored Nodes A Star: ", explored_astar)
+    print(len("explored path"))
     print()
 
     """print("============ Bottleneck Astar Search ================")
